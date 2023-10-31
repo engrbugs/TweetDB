@@ -1,0 +1,1 @@
+DROP TABLE Tweets_Table;
