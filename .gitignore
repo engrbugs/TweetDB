@@ -1,2 +1,11 @@
 /secret.ini
 /credentials/
+/.idea/.gitignore
+/.idea/aws.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/qodana.yaml
+/.idea/TweetDB.iml
+/.idea/vcs.xml
+/.idea/
