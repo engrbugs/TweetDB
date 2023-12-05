@@ -18,6 +18,7 @@ def retrieve_history_from_config(file_path):
         history_numbers = history_config['History'].get('numbers', '').split(',')
     return list(map(int, history_numbers))
 
+
 class SecretsManager:
     def __init__(self, secret_file):
         self.secret_config = configparser.ConfigParser()
