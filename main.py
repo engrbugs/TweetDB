@@ -135,41 +135,6 @@ if __name__ == '__main__':
     print("Tweets listener " + VERSION)
     print("Next tweet id:", next_id)
 
-    # clipboard_thread = threading.Thread(target=clipboard_listener)
-    # clipboard_thread.start()
-    #
-    # check_clipboard()
-
-    eight_data_entries = [
-    (9, datetime(2023, 7, 12), -1, "Discover the power of agreeableness: be liked without being a pushover. Balance kindness and assertiveness. Show politeness and ruthlessness. Charm through enthusiasm. Take responsibility, be authentic, and make a positive change. Embrace agreeableness, not people-pleasing."),
-    (10, datetime(2023, 7, 12), -1, "In wars, good versus bad is a naïve oversimplification. Investigate, understand complexities. Educate, challenge preconceptions. Embrace truth for impact. Engage in honest dialogue, be the catalyst for change. Step up, make a difference. Are you ready?"),
-    (11, datetime(2023, 7, 12), -1, "Small talk: mundane but impactful. It builds trust, forges connections. Let's explore casual conversation's hidden potential. Trust forms the foundation, change fuels a brighter future. Get ready for this journey."),
-    (12, datetime(2023, 7, 12), 11, "Trust's icebreaker: Small talk breaks barriers, fosters comfort. Start with 'How are you?' or 'What's new?' to spark authentic connections and deeper conversations."),
-    (13, datetime(2023, 7, 12), 11, "Business customer engagement: Engaging unhappy customers with 'How are you?' risks negative outcomes. Instead, ask, 'What can I do to make your day easier?' to show empathy, solve problems, and foster trust for positive resolutions."),
-    (14, datetime(2023, 7, 12), 11, "Emotional Intimacy: Meaningful conversations build trust and deep connections. Sharing personal experiences, dreams, and fears fosters vulnerability, strengthening bonds and creating a safe space for support and understanding."),
-    (15, datetime(2023, 7, 12), 11, "Embrace the art of fluidity, adaptability, and connection. Dare to initiate those seemingly small conversations that can make a significant impact."),
-    (16, datetime(2023, 7, 17), -1, "When you think about a recent conversation, do you remember the words or the feelings they brought up? Emotions stay with us more than exact words. Use this to your advantage: focus on making others feel great. You'll leave a positive, lasting impression."),
-    (17, datetime(2023, 8, 24), -1, "Imagine this: When a girl and a boy talk, only a small 10% of what she really means comes out as words. But surprise! The big 90% is in how she acts and looks, not what she says. So, put aside texting and online chats. Instead, go meet face-to-face for real connections."),
-    (18, datetime(2023, 8, 27), -1, "Women communicate in two modes: reality and wishes. They discuss things as they are or express how they'd prefer things to be. When unsure, assume the latter. It's like decoding their desires from their words."),
-    (19, datetime(2023, 8, 28), -1, "Enhance your flirting: subtle kino. Hand grazes to waist support, these gestures work wonders. Start gently, respect boundaries. Touch deepens bonds, comfort. No touch may indicate obstacles. Embrace touch to build connections."),
-    (20, datetime(2023, 9, 4), -1,
-     "Know the people you’re dealing with: they may seek adventure, attention, or romance. Recognize these desires to reveal their hidden attractions. See beyond the surface; a carefree individual might secretly desire structure, while a minimalist might quietly wish for abundance."),
-    (21, datetime(2023, 9, 13), -1,
-     "Harness the strength within you and the power of your actions. Courage! In a world where the line between the human and divine may blur, trust the Spirit and disregard what people think."),
-    (22, datetime(2023, 9, 15), -1,
-     "We should assess our relationships critically. A subtle, ongoing influence can lead to our downfall. While it works for celebrities rekindling romances, it may not apply in real life. If you did everything right before the breakup, the other person must have been no good."),
-    (23, datetime(2023, 9, 25), -1,
-     "Have you ever thought about the true cost of constant phone interruptions? It's possible that you could miss out on meaningful connections with your family and friends. There's a real price we pay for not mastering our phone distractions."),
-    (24, datetime(2023, 10, 1), -1,
-     "In a world full of challenges and surprises, there's a secret skill that can change the game: cunning. Life plays fair. When force isn't viable, wield your cunning, even resort to surrender as a tactic. The ultimate goal here is victory in war, not ego."),
-    (25, datetime(2023, 10, 6), -1,
-     "Stay Cool, Stay Wise. Don't let passion rule you; it can cloud judgment. Use a mediator in heated moments. Keep composure, avoid hasty actions. Reflection prevents future regrets. Choose wisdom over impulse."),
-    (26, datetime(2023, 10, 15), -1,
-     "A girl typically expects a call within 2 days. Call her after a week, and she will still accept the date if she's interested. Playfully tease her; challenge and coquetry represent another kind of emotional currency. Like a savings account, waiting leads to interest growth."),
-    (27, datetime(2023, 10, 16), -1,
-     "As Sun Tzu said, 'know the enemy and know yourself'; doing your homework brings success, much like understanding your date's soft spots before courting begins. Love is war. Build a strong Frame will give you the confidence you need for success, not only in love but also in war.")
-    ]
-
-    for entry in eight_data_entries:
-        id, tweet_date, parent_id, text = entry
-        write_database_complete(id, tweet_date, parent_id, text)
+    clipboard_thread = threading.Thread(target=clipboard_listener)
+    clipboard_thread.start()
+    check_clipboard()
